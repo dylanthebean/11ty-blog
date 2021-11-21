@@ -28,7 +28,19 @@ _italicized text_
 - Second item
 - Third item
 
-`code`
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    ...
+    <link href="themes/prism-ghcolors.css" rel="stylesheet" />
+  </head>
+  <body>
+    ...
+    <script src="prism.js"></script>
+  </body>
+</html>
+```
 
 ---
 
