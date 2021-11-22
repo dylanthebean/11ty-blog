@@ -18,21 +18,7 @@ font-family: 'VT323', monospace; */
   --fw-700: 700;
   --fw-900: 900;
 
-  /* --clr-primary-200: hsla(169, 70%, 95%, 1);
-  --clr-primary-300: hsla(169, 100%, 39%, 1);
-  --clr-primary-400: hsla(169, 100%, 26%, 1);
-  --clr-primary-500: hsla(169, 100%, 16%, 1); */
-
-  --clr-primary-200: hsl(135, 86%, 97%);
-  --clr-primary-300: hsl(134, 100%, 47%);
-  --clr-primary-400: hsl(134, 100%, 35%);
-  --clr-primary-500: hsl(134, 100%, 35%);
-
-  --clr-neutral-100: hsla(0, 0%, 100%, 1);
-  --clr-neutral-300: hsla(0, 0%, 50%, 1);
-  --clr-neutral-400: hsla(0, 0%, 40%, 1);
-  --clr-neutral-500: hsla(0, 0%, 60%, 1);
-  --clr-neutral-900: hsla(0, 0%, 10%, 1);
+  --clr-body: #323e35;
 }
 
 @media (min-width: 35em) {
@@ -90,15 +76,6 @@ body {
   line-height: 1.5;
 }
 
-::selection {
-  background: #ddffe5;
-  color: #ddffe5;
-}
-::-moz-selection {
-  background: #ddffe5;
-  color: #ddffe5;
-}
-
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -136,8 +113,8 @@ select {
 }
 
 /* //////////////////////
-  General styling
-  /////////////////////// */
+General styling
+/////////////////////// */
 
 body {
   font-family: var(--ff-body);
@@ -172,9 +149,17 @@ section,
   margin-top: 2rem;
 }
 
+::selection {
+  background: #ddffe5;
+  color: #ddffe5;
+}
+::-moz-selection {
+  background: #ddffe5;
+  color: #ddffe5;
+}
 /* //////////////////////
-  Utility Classes
-  /////////////////////// */
+Utility Classes
+/////////////////////// */
 
 /* select all direct childen of .flow
    and add margin to the top for proper
