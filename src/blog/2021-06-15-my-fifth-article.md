@@ -2,7 +2,7 @@
 title: McDonald’s, Kiosk UX Case Study.
 author: Dylan Behan
 date: 2021-06-15
-tags: "post"
+tags: ["post", "design"]
 image: /assets/blog/article-test2.jpg
 imageAlt: This is a test
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?

@@ -1,0 +1,28 @@
+---
+title: Code Posts
+layout: 'base.njk'
+---
+
+
+<div class="section container--narrow">
+    <h1 class="section-title">Articles / Code.</h1>
+
+
+    <ul role="list" class="articles__list flow">
+        {%- for post in collections.code | reverse -%}
+        <li>
+            <article class="post">
+                <p class="post__meta">{{ post.data.date | postDate }} <span>&sdot;</span> <span
+                        class="post__meta--tags">{{post.data.tags}}</span></p>
+                <h3 class="post__title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+                <div class="post__image--container">
+                    <img src="{{ post.data.image}}" alt="{{ post.data.imageAlt }}" class="post__image">
+                </div>
+                <p class="post__body">{{ post.data.description }}</p>
+                <a href="{{ post.url }}" class="read-more">Read more...</a>
+            </article>
+        </li>
+        {%- endfor %}
+    </ul>
+
+</div>
