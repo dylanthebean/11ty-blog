@@ -8,8 +8,6 @@ imageAlt: This is a test
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?
 ---
 
-# H1
-
 ## H2
 
 ### H3
@@ -18,7 +16,7 @@ description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendi
 
 _italicized text_
 
-> blockquote
+> blockquote this is a block quote
 
 1. First item
 2. Second item
