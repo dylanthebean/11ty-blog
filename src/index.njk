@@ -1,15 +1,19 @@
 ---
 title: 11ty Blog
-layout: 'base.njk'
+layout: "base.njk"
+pagination:
+  data: collections.post
+  size: 3
+  alias: posts
+paginationPrevText: '< Newer posts'
+paginationNextText: 'Older posts >'
 ---
-
 
 <div class="section container--narrow">
   <h1 class="section-title">Articles</h1>
 
-
   <ul role="list" class="articles__list flow">
-    {%- for post in collections.post | reverse -%}
+    {%- for post in posts | reverse -%}
     <li>
       <article class="post">
         <p class="post__meta">{{ post.data.date | postDate }} <span>&sdot;</span> <span
@@ -26,3 +30,23 @@ layout: 'base.njk'
   </ul>
 
 </div>
+
+{# Only renders this section if there are links to render #}
+{% if pagination.href.next or pagination.href.previous %}
+<footer class="pagination container--narrow">
+  <div class="wrapper">
+    <nav class="pagination__inner" aria-label="Pagination links">
+      {% if pagination.href.previous %}
+      <a href="{{ pagination.href.previous }}{{ paginationAnchor }}" data-direction="backwards">
+        <span>{{ paginationPrevText if paginationPrevText else 'Previous' }}</span>
+      </a>
+      {% endif %}
+      {% if pagination.href.next %}
+      <a href="{{ pagination.href.next }}{{ paginationAnchor }}" data-direction="forwards">
+        <span>{{ paginationNextText if paginationNextText else 'Next' }}</span>
+      </a>
+      {% endif %}
+    </nav>
+  </div>
+</footer>
+{% endif %}
