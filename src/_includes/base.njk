@@ -46,6 +46,58 @@
             });
         }
     </script>
+
+<script>
+
+    const darkToggleButtons = document.querySelectorAll('.dark-toggle')
+    const darkLogo = document.getElementById("logo-dark")
+    const lightLogo = document.getElementById("logo-light")
+    const darkLogoBtm = document.getElementById("logo-btm-dark")
+    const lightLogoBtm = document.getElementById("logo-btm-light")
+
+
+
+    function changeDarkToggleBtnIcon () {
+      darkToggleButtons.forEach(btn => {
+        if (btn.querySelector('img').src.indexOf('assets/moon.svg') !== -1) {
+          btn.querySelector('img').src = "{{ 'assets/moon-light.svg' | url }}"
+        } else {
+          btn.querySelector('img').src = "{{ 'assets/moon.svg' | url }}"
+        }
+      })
+    }
+    if (
+      localStorage.prefsDark === 'true' || 
+      (
+        window.matchMedia && 
+        window.matchMedia('(prefers-color-scheme: dark)').matches && 
+        localStorage.prefsDark !== 'false')
+      ) {
+      document.body.classList.add('dark')
+      changeDarkToggleBtnIcon()
+    }
+
+    darkToggleButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        changeDarkToggleBtnIcon()
+        if (document.body.classList.contains('dark')) {
+          document.body.classList.remove('dark')
+          lightLogo.classList.remove('hidden')
+          darkLogo.classList.add('hidden')
+          lightLogoBtm.classList.remove('hidden')
+          darkLogoBtm.classList.add('hidden')
+          localStorage.prefsDark = 'false'
+        } else {
+          document.body.classList.add('dark')
+          darkLogo.classList.remove('hidden')
+            lightLogo.classList.add('hidden')
+          darkLogoBtm.classList.remove('hidden')
+            lightLogoBtm.classList.add('hidden')
+          localStorage.prefsDark = 'true'
+        }
+      })
+    })
+  </script>
 </body>
 
 </html>
