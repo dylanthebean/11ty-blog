@@ -59,12 +59,12 @@ font-family: 'VT323', monospace; */
   }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   img {
     filter: brightness(.8) contrast(1.2);
   }
 
-}
+} */
 
 body.dark .moon {
   fill: #F2FFF5;
