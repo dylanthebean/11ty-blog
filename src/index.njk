@@ -14,7 +14,7 @@ paginationNextText: 'Older posts >'
   <h1 class="section-title">Articles</h1>
 
   <ul role="list" class="articles__list flow">
-    {%- for post in posts | reverse -%}
+    {%- for post in posts -%}
     <li>
       <article class="post">
         <p class="post__meta">{{ post.data.date | postDate }} <span>&sdot;</span> <span
