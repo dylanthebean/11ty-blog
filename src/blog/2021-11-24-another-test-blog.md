@@ -6,7 +6,10 @@ description: Amet est placerat in egestas erat imperdiet sed euismod. Elementum
 author: Dylan Behan
 date: 2021-11-24T23:34:36.987Z
 tags:
-  - post|code|design|life
+  - post
+  - code
+  - design
+  - life
 image: /assets/blog/wallhaven-j89lmy.png
 imageAlt: Gengar
 ---
