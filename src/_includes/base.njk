@@ -59,10 +59,10 @@
 
     function changeDarkToggleBtnIcon () {
       darkToggleButtons.forEach(btn => {
-        if (btn.querySelector('img').src.indexOf('assets/moon.svg') !== -1) {
-          btn.querySelector('img').src = "{{ 'assets/moon-light.svg' | url }}"
+        if (btn.querySelector('img').src.indexOf('/assets/moon.svg') !== -1) {
+          btn.querySelector('img').src = "{{ '/assets/moon-light.svg' | url }}"
         } else {
-          btn.querySelector('img').src = "{{ 'assets/moon.svg' | url }}"
+          btn.querySelector('img').src = "{{ '/assets/moon.svg' | url }}"
         }
       })
     }
@@ -97,6 +97,7 @@
         }
       })
     })
+
   </script>
 </body>
 
