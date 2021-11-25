@@ -252,6 +252,14 @@ Utility Classes
   font-size: 6.85375rem;
 }
 
+.pagination {
+  font-family: 'VT323', monospace;
+}
+
+.pagination a {
+  text-decoration: none;
+}
+
 /* //////////////////////
   Header
   /////////////////////// */
@@ -633,7 +641,7 @@ blockquote p {
 
 .pagination__inner {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 2rem;
 }
