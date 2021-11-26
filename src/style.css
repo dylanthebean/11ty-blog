@@ -41,7 +41,8 @@ font-family: 'VT323', monospace; */
   --clr-sidelink-text: #0C2F3F;
   --clr-selection: #001204;
   --clr-meta-dot: #ffffff;
-  --bg-grad: linear-gradient(159.46deg, #001E07 0%, #001204 100%);;
+  /* --bg-grad: linear-gradient(159.46deg, #001E07 0%, #001204 100%); */
+  --bg-grad: linear-gradient(159.46deg, #000a02 0%, #001204 100%);;
 
 }
 
@@ -358,7 +359,7 @@ Utility Classes
 }
 
 @media (max-width: 56em) {
-  .site-footer {
+  .site-footer{
     flex-direction: column;
     align-items: center;
   }
@@ -653,6 +654,14 @@ blockquote p {
 
 /* Books Gallery */
 
+.layout-body {
+  background-image: var(--bg-grad);
+  overflow-x: hidden; 
+  min-height: 100vh; 
+  display: flex; 
+  flex-direction: column;
+}
+
 .panner {
   overflow: hidden;
   width: 100vw;
@@ -665,7 +674,6 @@ blockquote p {
   bottom: 0;
   left: 0;
   height: 50vh;
-  background-image: var(--bg-grad);
   
   display: grid;
   grid-template-columns: repeat(8, 300px);
@@ -691,6 +699,47 @@ blockquote p {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   gap: 4rem;
+}
+
+/* form */
+form {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+form input {
+  width: 60%;
+  padding: 0.5rem;
+  color: var(--clr-sec-heading);
+  border: 2px solid var(--clr-title);
+  background-color: var(--clr-sidelink-text);
+  border-radius: 4px;
+  caret-color: var(--clr-brand);
+}
+
+.submit-bar {
+  display: grid;
+  grid-template-columns: 100% 1fr;
+  width: 100%;
+  position: relative;
+}
+
+
+form button {
+  position: absolute;
+  top: 10%;
+  left: 55%;
+  background: none;
+  border: none;
+  grid-column: 1 / 2;
+}
+
+form button:hover .submit-icon{
+  fill: var(--clr-brand);
+}
+.submit-icon {
+  fill: var(--clr-title);
 }
 
 /* Media Qs */
@@ -719,6 +768,27 @@ blockquote p {
 .read-more:hover,
 .read-more:focus {
   color: var(--clr-brand);
+}
+
+@media (max-width: 56em) {
+  .site-footer{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-footer ul {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .footer-fbot > * {
+    display: block;
+  }
+
+  .logo {
+    margin-left: 0.825rem;
+    margin-bottom: 0.825rem;
+  }
 }
 
 @media (max-width: 50em) {
