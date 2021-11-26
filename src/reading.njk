@@ -1,0 +1,111 @@
+---
+title: Reading
+layout: 'layout.njk'
+---
+
+
+
+<div class="section container--narrow">
+    <h1 class="section-title">Reading</h1>
+
+<input type="submit" value="">
+<button type="submit">Submit</button>
+
+</div>
+
+<div class="panner">
+    <div class="pannable">
+
+        <img src="/assets/books/book-1.jpg" alt="">
+        <img src="/assets/books/book-2.jpg" alt="">
+        <img src="/assets/books/book-3.jpg" alt="">
+        <img src="/assets/books/book-4.jpg" alt="">
+        <img src="/assets/books/book-5.jpg" alt="">
+        <img src="/assets/books/book-6.jpg" alt="">
+        <img src="/assets/books/book-7.jpg" alt="">
+        <img src="/assets/books/book-8.jpg" alt="">
+        <img src="/assets/books/book-9.jpg" alt="">
+        <img src="/assets/books/book-10.jpg" alt="">
+        <img src="/assets/books/book-11.jpg" alt="">
+        <img src="/assets/books/book-12.jpg" alt="">
+        <img src="/assets/books/book-13.jpg" alt="">
+        <img src="/assets/books/book-14.jpg" alt="">
+        <img src="/assets/books/book-15.jpg" alt="">
+        <img src="/assets/books/book-16.jpg" alt="">
+        <img src="/assets/books/book-17.jpg" alt="">
+        <img src="/assets/books/book-18.jpg" alt="">
+        <img src="/assets/books/book-19.jpg" alt="">
+        <img src="/assets/books/book-20.jpg" alt="">
+        <img src="/assets/books/book-21.jpg" alt="">
+        <img src="/assets/books/book-22.jpg" alt="">
+        <img src="/assets/books/book-23.jpg" alt="">
+        <img src="/assets/books/book-24.jpg" alt="">
+        <img src="/assets/books/book-25.jpg" alt="">
+        <img src="/assets/books/book-26.jpg" alt="">
+        <img src="/assets/books/book-27.jpg" alt="">
+        <img src="/assets/books/book-28.jpg" alt="">
+        <img src="/assets/books/book-29.jpg" alt="">
+        <img src="/assets/books/book-30.jpg" alt="">
+        <img src="/assets/books/book-31.jpg" alt="">
+        <img src="/assets/books/book-32.jpg" alt="">
+        <img src="/assets/books/book-33.jpg" alt="">
+        <img src="/assets/books/book-34.jpg" alt="">
+        <img src="/assets/books/book-35.jpg" alt="">
+        <img src="/assets/books/book-36.jpg" alt="">
+        <img src="/assets/books/book-37.jpg" alt="">
+        <img src="/assets/books/book-38.jpg" alt="">
+        <img src="/assets/books/book-39.jpg" alt="">
+        <img src="/assets/books/book-40.jpg" alt="">
+        
+    </div>
+</div>
+
+<script>
+
+    const panTag = document.querySelector('.pannable')
+
+    let currentX = 0
+    let currentY = 0
+    let aimX = 0
+    let aimY = 0
+    
+
+    document.addEventListener('mousemove', function (e) {
+        const windowWidth = window.innerWidth
+        const windowHeight = window.innerHeight
+
+        const pannableWidth = panTag.clientWidth
+        const pannableHeight = panTag.clientHeight
+
+        const mouseX = e.pageX
+        const mouseY = e.pageY
+
+        const panWidth = pannableWidth - windowWidth
+        const panHeight = pannableHeight - windowHeight
+
+
+        const percentX = mouseX / windowWidth
+        const percentY = mouseY / windowHeight
+
+
+        const aimX = -1 * panWidth * percentX
+        const aimY = -1 * panHeight * percentY
+
+
+        panTag.style.left = aimX + 'px'
+        panTag.style.bottom = aimY + 'px'
+    })
+    
+
+    // const animate = function() {
+    //     currentX += (aimX - currentX) * 0.05
+    //     currentY += (aimY - currentY) * 0.05
+
+    //     panTag.style.left = currentX + 'px'
+    //     panTag.style.bottom = currentY + 'px'
+
+    //     requestAnimationFrame(animate);
+    // }
+
+    // animate();
+</script>

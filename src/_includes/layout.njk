@@ -15,26 +15,21 @@
         integrity="sha512-uEfqz8yEVto3O7e1yu9u2Ij38I86i0oVP94rWxW4X1GEyNhYo14CYmo5j7mHQX/J9XSXVklxDQISYNStBfml0w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script defer src="/darkmode.js"></script>
 </head>
 
-<body>
+<body style="overflow-x: hidden; min-height: 100vh; display: flex; flex-direction: column;">
     {% include 'header.njk' %}
 
-    <main class="sidebar container">
+    <main>
 
-        <aside class="container">
-            <p class="tags">Categories</p>
-            <ul>
-                <li><a href="/code">code</a></li>
-                <li><a href="/life">life</a></li>
-                <li><a href="/design">design</a></li>
-            </ul>
-        </aside>
         {{ content | safe }}
+
     </main>
 
-    {% include 'footer.njk' %}
+    <div class="footer-fbot">
+
+        {% include 'footer.njk' %}
+    </div>
 
     <script>
         if (window.netlifyIdentity) {
@@ -99,8 +94,8 @@
       })
     })
 
-
   </script>
+
 </body>
 
 </html>

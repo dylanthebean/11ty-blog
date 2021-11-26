@@ -644,11 +644,56 @@ blockquote p {
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 2rem;
+  padding: 2rem;
 }
 
 .pagination__inner > [data-direction="forwards"] {
   margin-inline-start: auto;
 }
+
+/* Books Gallery */
+
+.panner {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.pannable {
+  z-index: -10;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50vh;
+  background-image: var(--bg-grad);
+  
+  display: grid;
+  grid-template-columns: repeat(8, 300px);
+  grid-auto-flow: dense;
+  gap: 2rem;
+}
+
+.panner img {
+  max-height: 400px;
+  opacity: 0.3;
+  place-self: center;
+}
+
+.footer-fbot {
+  position: fixed;
+  bottom: 0;
+  place-self: center;
+  width: 100%;
+}
+
+.footer-fbot > * {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 4rem;
+}
+
+/* Media Qs */
 
 @media (min-width: 45em) {
   .post {
