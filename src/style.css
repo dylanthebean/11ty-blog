@@ -742,6 +742,11 @@ form button:hover .submit-icon{
   fill: var(--clr-title);
 }
 
+.captcha { 
+  position: absolute;
+margin-top: 4rem 0;
+}
+
 /* Media Qs */
 
 @media (min-width: 45em) {
