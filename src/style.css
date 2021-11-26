@@ -735,6 +735,11 @@ form button {
   grid-column: 1 / 2;
 }
 
+form input::placeholder {
+  font-family: 'VT323', monospace;
+  color: var(--clr-brand);
+}
+
 form button:hover .submit-icon{
   fill: var(--clr-brand);
 }
@@ -849,6 +854,7 @@ form button:hover .submit-icon{
   .nav-list {
     flex-direction: row;
     margin-top: 2rem;
+    margin-right: 0;
     padding: 0 2rem;
     border-left: 2px solid var(--clr-sec-heading);
     border-right: 2px solid var(--clr-sec-heading);
@@ -898,7 +904,7 @@ form button:hover .submit-icon{
   .page-header {
     margin: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     /* background-color: #001204; */
     min-width: 100vw;
   }
