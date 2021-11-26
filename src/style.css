@@ -744,7 +744,7 @@ form button:hover .submit-icon{
 
 .captcha { 
   position: absolute;
-margin-top: 4rem 0;
+  margin: 4rem 0;
 }
 
 /* Media Qs */
