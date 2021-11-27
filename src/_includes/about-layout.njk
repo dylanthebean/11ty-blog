@@ -52,6 +52,23 @@
         const lightLogoBtm = document.getElementById("logo-btm-light")
 
 
+        window.addEventListener('load', (e) => {
+            if (document.body.classList.contains('dark')) {
+                lightLogo.classList.add('hidden')
+                darkLogo.classList.remove('hidden')
+                lightLogoBtm.classList.add('hidden')
+                darkLogoBtm.classList.remove('hidden')
+                localStorage.prefsDark = 'true'
+            } else {
+                document.body.classList.remove('dark')
+                darkLogo.classList.add('hidden')
+                lightLogo.classList.remove('hidden')
+                darkLogoBtm.classList.add('hidden')
+                lightLogoBtm.classList.remove('hidden')
+                localStorage.prefsDark = 'false'
+            }
+        })
+
 
         function changeDarkToggleBtnIcon() {
             darkToggleButtons.forEach(btn => {
