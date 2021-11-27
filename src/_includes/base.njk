@@ -2,53 +2,53 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-    <title>{{ title }}</title>
-    <link rel="canonical" href="{{site.root}}{{page.url}}">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-duotone-sea.min.css"
-        integrity="sha512-uEfqz8yEVto3O7e1yu9u2Ij38I86i0oVP94rWxW4X1GEyNhYo14CYmo5j7mHQX/J9XSXVklxDQISYNStBfml0w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script defer src="/darkmode.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <title>{{ title }}</title>
+  <link rel="canonical" href="{{site.root}}{{page.url}}">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-duotone-sea.min.css"
+    integrity="sha512-uEfqz8yEVto3O7e1yu9u2Ij38I86i0oVP94rWxW4X1GEyNhYo14CYmo5j7mHQX/J9XSXVklxDQISYNStBfml0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script defer src="/darkmode.js"></script>
 </head>
 
 <body>
-    {% include 'header.njk' %}
+  {% include 'header.njk' %}
 
-    <main class="sidebar container">
+  <main class="sidebar container">
 
-        <aside class="container">
-            <p class="tags">Categories</p>
-            <ul>
-                <li><a href="/code">code</a></li>
-                <li><a href="/life">life</a></li>
-                <li><a href="/design">design</a></li>
-            </ul>
-        </aside>
-        {{ content | safe }}
-    </main>
+    <aside class="container">
+      <p class="tags">Categories</p>
+      <ul>
+        <li><a href="/code">code</a></li>
+        <li><a href="/life">life</a></li>
+        <li><a href="/design">design</a></li>
+      </ul>
+    </aside>
+    {{ content | safe }}
+  </main>
 
-    {% include 'footer.njk' %}
+  {% include 'footer.njk' %}
 
-    <script>
-        if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                    window.netlifyIdentity.on("login", () => {
-                        document.location.href = "/admin/";
-                    });
-                }
-            });
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
         }
-    </script>
+      });
+    }
+  </script>
 
-<script>
+  <script>
 
     const darkToggleButtons = document.querySelectorAll('.dark-toggle')
     const darkLogo = document.getElementById("logo-dark")
@@ -58,7 +58,25 @@
 
 
 
-    function changeDarkToggleBtnIcon () {
+    window.addEventListener('load', (e) => {
+      if (document.body.classList.contains('dark')) {
+        lightLogo.classList.add('hidden')
+        darkLogo.classList.remove('hidden')
+        lightLogoBtm.classList.add('hidden')
+        darkLogoBtm.classList.remove('hidden')
+        localStorage.prefsDark = 'true'
+      } else {
+        document.body.classList.remove('dark')
+        darkLogo.classList.add('hidden')
+        lightLogo.classList.remove('hidden')
+        darkLogoBtm.classList.add('hidden')
+        lightLogoBtm.classList.remove('hidden')
+        localStorage.prefsDark = 'false'
+      }
+    })
+
+
+    function changeDarkToggleBtnIcon() {
       darkToggleButtons.forEach(btn => {
         if (btn.querySelector('img').src.indexOf('/assets/moon.svg') !== -1) {
           btn.querySelector('img').src = "{{ '/assets/moon-light.svg' | url }}"
@@ -68,12 +86,12 @@
       })
     }
     if (
-      localStorage.prefsDark === 'true' || 
+      localStorage.prefsDark === 'true' ||
       (
-        window.matchMedia && 
-        window.matchMedia('(prefers-color-scheme: dark)').matches && 
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches &&
         localStorage.prefsDark !== 'false')
-      ) {
+    ) {
       document.body.classList.add('dark')
       changeDarkToggleBtnIcon()
     }
@@ -91,9 +109,9 @@
         } else {
           document.body.classList.add('dark')
           darkLogo.classList.remove('hidden')
-            lightLogo.classList.add('hidden')
+          lightLogo.classList.add('hidden')
           darkLogoBtm.classList.remove('hidden')
-            lightLogoBtm.classList.add('hidden')
+          lightLogoBtm.classList.add('hidden')
           localStorage.prefsDark = 'true'
         }
       })

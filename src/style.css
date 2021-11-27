@@ -1037,7 +1037,8 @@ form button:hover .submit-icon {
   }
 
   .section {
-    padding: 0;
+    padding-left: 1rem;
+    margin-top: 0rem;
   }
 
   .section-title {
@@ -1116,6 +1117,7 @@ form button:hover .submit-icon {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin-top: 1rem;
   }
 
   .section-title {
@@ -1157,7 +1159,7 @@ form button:hover .submit-icon {
   }
 
   form button {
-    left: 50%;
+    left: 45%;
   }
 }
 
