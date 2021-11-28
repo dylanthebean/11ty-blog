@@ -1139,6 +1139,12 @@ form button:hover .submit-icon {
   margin-inline: 20%;
   padding-inline: 1.5em;
   max-width: 65rem;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
 }
 
 .section-about span {
@@ -1216,8 +1222,6 @@ form button:hover .submit-icon {
 }
 
 .section-about ul li img {
-  transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
   /* display: none; */
   visibility: hidden;
   position: absolute;
@@ -1274,7 +1278,7 @@ form button:hover .submit-icon {
   }
 
   .section-about ul li img {
-    bottom: 2em;
+    bottom: 1em;
     left: -5em;
   }
 }
@@ -1550,8 +1554,8 @@ form button:hover .submit-icon {
     transform: scale(0.6);
   }
   .section-about ul li img {
-    bottom: -50%;
-    left: -200%;
+    bottom: -1em;
+    left: -6em;
   }
 }
 
@@ -1665,8 +1669,8 @@ form button:hover .submit-icon {
   }
 
   .section-about ul li img {
-    bottom: -80%;
-    left: -200%;
+    bottom: -1em;
+    left: -8em;
   }
 }
 
@@ -1700,8 +1704,8 @@ form button:hover .submit-icon {
   }
 
   .section-about ul li img {
-    bottom: -100%;
-    left: -300%;
+    bottom: -2em;
+    left: -8em;
   }
 
   #about-title {
