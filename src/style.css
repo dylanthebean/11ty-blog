@@ -34,6 +34,7 @@ font-family: 'VT323', monospace; */
   --clr-sidelink-text: #f2fef5;
   --clr-selection: #ddffe5;
   --clr-meta-dot: #00ee38;
+  --clr-span: #f2fef5;
   --bg-grad: linear-gradient(159.61deg, #ffffff -0.62%, #f2fef5 100%);
 }
 
@@ -47,6 +48,7 @@ font-family: 'VT323', monospace; */
   --clr-sidelink-text: #0c2f3f;
   --clr-selection: #001204;
   --clr-meta-dot: #ffffff;
+  --clr-span: #001204;
   /* --bg-grad: linear-gradient(159.46deg, #001E07 0%, #001204 100%); */
   --bg-grad: linear-gradient(159.46deg, #000a02 0%, #001204 100%);
 }
@@ -339,7 +341,8 @@ Utility Classes
   transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1),
     -webkit-transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
 }
-.nav-list li:hover::after {
+.nav-list li:hover::after,
+.nav-list li:active::after {
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
   transform: scaleX(1);
@@ -353,6 +356,26 @@ Utility Classes
 @media only screen and (max-width: 50em) {
   .navigation {
     display: inline-block;
+  }
+
+  #about-title {
+    margin-bottom: 0;
+    font-size: 4.236rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  #about-title {
+    margin: -1rem 0;
+    font-size: 2.618rem;
+  }
+
+  .section .section-about ul li {
+    line-height: 1.5;
+    font-size: 1.618rem;
+  }
+
+  .section-about .inline-gif span {
+    font-size: 1.618rem;
   }
 }
 
@@ -1028,6 +1051,10 @@ blockquote p {
   gap: 4rem;
 }
 
+/* .about-header > .navigation {
+  transform: scale(1000%) !important;
+} */
+
 /* form */
 form {
   display: -webkit-box;
@@ -1107,47 +1134,169 @@ form button:hover .submit-icon {
 }
 
 /* section about */
+
+.about--narrow {
+  margin-inline: 20%;
+  padding-inline: 1.5em;
+  max-width: 65rem;
+}
+
 .section-about span {
+  position: relative;
   cursor: pointer;
   font-family: var(--ff-heading);
-  color: var(--clr-sec-heading);
-  font-size: 2.618125rem;
+  color: var(--clr-span);
+  /* -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--clr-sec-heading);
+  -webkit-text-fill-color: transparent; */
+  text-shadow: -2px -2px 0 var(--clr-sec-heading),
+    2px -2px 0 var(--clr-sec-heading), -2px 2px 0 var(--clr-sec-heading),
+    2px 2px 0 var(--clr-sec-heading);
+  font-size: 4.235625rem;
   font-weight: var(--fw-900);
-  margin-left: 1rem;
+  margin-left: 0.25rem;
+  /* text-decoration: underline; */
+  transition: all 0.8s ease;
+}
+
+.section-about ul .inline-gif {
+  position: relative;
+}
+
+.section-about ul .inline-gif span::after {
+  content: "";
+  display: block;
+  height: 6px;
+  background-color: var(--clr-brand);
+  position: absolute;
+  left: 0.15rem;
+  right: 0.15rem;
+  bottom: -5px;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  -ms-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: -webkit-transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+  -o-transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1),
+    -webkit-transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.section-about ul .inline-gif:hover span::after,
+.section-about ul .inline-gif:active span::after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
 }
 .section-about ul {
+  width: 24ch;
+  color: var(--clr-sec-heading);
+  /* display: grid; */
+  font-family: var(--ff-heading);
+  font-size: 4.235625rem;
+  font-weight: var(--fw-900);
+  /* grid-template-columns: 3fr 1fr; */
   list-style: none;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
   margin-top: 4rem;
   padding-left: 0;
 }
 .section-about ul li {
-  display: inline-flex;
+  /* display: inline-flex; */
   align-items: center;
-  position: relative;
+  /* position: relative; */
   line-height: 1.5;
   margin-bottom: 2rem;
 }
+
+.section-about ul .inline-gif {
+  position: relative;
+}
+
 .section-about ul li img {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
   /* display: none; */
   visibility: hidden;
   position: absolute;
-  bottom: 40%;
-  left: 65%;
+  bottom: 1.5em;
+  left: 1.5em;
   z-index: 1;
   max-width: none;
   transition: all 0.3s ease;
   transform: scale(0);
 }
-.section-about ul li:hover img {
+.section-about ul .inline-gif:hover img,
+.section-about ul .inline-gif:active img {
   /* display: block; */
   visibility: visible;
   transform: scale(1);
 }
 
-.section-about ul li:hover span {
+.section-about ul .inline-gif:hover span,
+.section-about ul .inline-gif:active span {
   opacity: 0.9;
+  /* color: var(--clr-brand); */
+}
+
+.section-about ul .inline-gif {
+  display: inline-block;
+}
+
+@media (max-width: 80em) {
+  .section-about {
+    overflow: hidden;
+  }
+
+  .about--narrow {
+    margin-inline: 2%;
+    margin-right: 0;
+  }
+
+  .section-about ul {
+    width: 100%;
+  }
+
+  #about-title {
+    margin: -1rem 0;
+    font-size: 4.236rem;
+  }
+
+  .section .section-about ul li {
+    line-height: 1.5;
+    font-size: 2.618rem;
+  }
+
+  .section-about .inline-gif span {
+    font-size: 2.618rem;
+  }
+
+  .section-about ul li img {
+    bottom: 2em;
+    left: -5em;
+  }
+}
+@media (max-width: 50em) {
+  .section-about ul li {
+    line-height: 1.5;
+    font-size: 2.618rem;
+  }
+
+  .section-about span {
+    font-size: 2.618rem;
+  }
+
+  .section-about ul .inline-gif:hover img,
+  .section-about ul .inline-gif:active img {
+    transform: scale(0.8);
+  }
+
+  .section-about ul li img {
+    bottom: 1em;
+    left: -4em;
+  }
 }
 
 /* Media Qs */
@@ -1208,6 +1357,27 @@ form button:hover .submit-icon {
   color: var(--clr-brand);
 }
 
+@media only screen and (max-width: 62.5em) {
+  #about-title {
+    margin: -1rem 0;
+    font-size: 4.236rem;
+  }
+
+  .section .section-about ul li {
+    line-height: 1.5;
+    font-size: 2.618rem;
+  }
+
+  .section-about .inline-gif span {
+    font-size: 2.618rem;
+  }
+
+  .section-about ul li img {
+    bottom: 2em;
+    left: -5em;
+  }
+}
+
 @media (max-width: 56em) {
   .site-footer {
     -webkit-box-orient: vertical;
@@ -1234,6 +1404,10 @@ form button:hover .submit-icon {
     margin-left: 0.825rem;
     margin-bottom: 0.825rem;
   }
+}
+
+.book-all {
+  display: none;
 }
 
 @media (max-width: 50em) {
@@ -1315,10 +1489,70 @@ form button:hover .submit-icon {
   .navigation__link:active {
     transform: scale(0.8);
   }
+
+  .book-wrapper {
+    border-top: 4px solid var(--clr-title);
+  }
+
+  .panner {
+    border-bottom: 4px solid var(--clr-title);
+  }
+
+  .panner img {
+    z-index: 100;
+    max-height: 100%;
+    overflow: visible;
+  }
+
+  .book-all {
+    display: block;
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .pannable {
+    display: none;
+  }
+
+  .footer-fbot {
+    position: relative;
+    bottom: 0;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
+    place-self: center;
+    width: 100%;
+  }
 }
 
 .nav_mobile {
   display: none;
+}
+
+@media screen and (max-width: 45.625em) {
+  #about-title {
+    margin: -1rem 0;
+    font-size: 2.618rem;
+  }
+
+  .section .section-about ul li {
+    line-height: 1.5;
+    font-size: 1.618rem;
+  }
+
+  .section-about .inline-gif span {
+    font-size: 1.618rem;
+  }
+
+  .section-about ul .inline-gif:hover img,
+  .section-about ul .inline-gif:active img {
+    transform: scale(0.6);
+  }
+  .section-about ul li img {
+    bottom: -50%;
+    left: -200%;
+  }
 }
 
 @media (max-width: 38em) {
@@ -1424,6 +1658,16 @@ form button:hover .submit-icon {
   form button {
     left: 45%;
   }
+
+  .section-about ul .inline-gif:hover img,
+  .section-about ul .inline-gif:active img {
+    transform: scale(0.6);
+  }
+
+  .section-about ul li img {
+    bottom: -80%;
+    left: -200%;
+  }
 }
 
 @media screen and (max-width: 31.25em) {
@@ -1453,6 +1697,30 @@ form button:hover .submit-icon {
 
   button[type="submit"] {
     transform: scale(0.8);
+  }
+
+  .section-about ul li img {
+    bottom: -100%;
+    left: -300%;
+  }
+
+  #about-title {
+    margin: -1rem 0;
+    font-size: 2.618rem;
+  }
+
+  .section .section-about ul li {
+    line-height: 1.5;
+    font-size: 1.618rem;
+  }
+
+  .section-about .inline-gif span {
+    font-size: 1.618rem;
+  }
+
+  .section-about ul .inline-gif:hover img,
+  .section-about ul .inline-gif:active img {
+    transform: scale(0.4);
   }
 }
 
