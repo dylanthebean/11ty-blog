@@ -1622,8 +1622,10 @@ form button:hover .submit-icon {
   }
 
   .section-title {
-    font-size: 4rem;
+    /* font-size: 4rem; */
+    font-size: 3.2rem;
     margin-bottom: 1rem;
+    letter-spacing: -2px;
   }
 
   .post__title {
