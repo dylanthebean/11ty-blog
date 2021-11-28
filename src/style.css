@@ -1585,6 +1585,10 @@ form button:hover .submit-icon {
   body {
     font-size: var(--fs-300);
   }
+
+  .section {
+    padding: min(5vh, 10em) 0;
+  }
   .page-header__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
