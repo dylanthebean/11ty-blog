@@ -35,11 +35,9 @@ So wouldn’t my limited free time outside work be better spent practicing code,
 
 ![daniel shiffman thumbs up](/assets/blog/codingtrain.webp)
 
-
-
 I definitely have a newfound desire to provide value to people through the amazing possibilities of code but I feel like taking a brief step back from coding to delve into UX and the design process will lead me to more thoughtfully researched decisions as I try to progress my skills in solution development.
 
-My approach as a newbie trying to get into the tech industry is to cast a wide net and I dunno maybe become a unicorn. 🦄
+My approach as a newbie trying to get into the tech industry is to cast a wide net and I dunno maybe become a unicorn.
 
 ![candy mountain charlie](/assets/blog/unicorn.webp)
 
