@@ -32,7 +32,7 @@ My only real attempts at ‘study’ involved writing and rewriting lines of a d
 
 I put more importance on video game related learning more than anything truly educational.
 
-### Some things that took precedence over schoolwork:
+Some things that took precedence over schoolwork:
 
 * Game mechanics
 * Builds
