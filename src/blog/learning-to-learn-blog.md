@@ -41,9 +41,7 @@ Some things that took precedence over schoolwork:
 
 If it wasn’t whatever flavor of the month game I was engrossed in at the time I wasn’t interested.
 
-My relationship with educational learning was non-existent and it really stunted my progression in life. 
-
-Until I was on the other side of the table.
+My relationship with educational learning was non-existent and it really stunted my progression in life. Until I was on the other side of the table.
 
 ![me teaching](/assets/blog/lean.gif)
 
