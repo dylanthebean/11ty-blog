@@ -55,7 +55,7 @@ Trying to shake the fear of documenting my learning journey has been a challenge
 
 ![](/assets/blog/ssx-tricky.gif)
 
-### So why create content?
+So why create content?
 
 I realised it’s only me that can clear that gate, and start the race.
 
