@@ -14,7 +14,7 @@ imageAlt: digital garden
 ---
 ## My Blog
 
-The goal of this blog is to be open and honest about my journey. I need a place to try to cement the new things that I’m attempting to learn, and hopefully shake my old brass attitude towards learning along the way. Whether it’s code, design, or just life I plan to have this green dot being the start of an ever-growing digital garden.
+The goal of this blog is to be open and honest about my journey. I need a place to try to cement the new things that I’m attempting to learn, and hopefully shake my old brass attitude towards learning along the way. Whether it’s code, design, or just life, I plan to have this green dot be the start of an ever-growing digital garden.
 
 ![sugar, spice, and everything nice.](/assets/blog/powerpuff-girls-sugar.gif)
 
