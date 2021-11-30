@@ -1130,6 +1130,7 @@ form button:hover .submit-icon {
 
 .captcha {
   position: absolute;
+  z-index: 100;
   margin: 4rem 0;
 }
 
@@ -1279,7 +1280,12 @@ form button:hover .submit-icon {
 
   .section-about ul li img {
     bottom: 1em;
-    left: -5em;
+    left: -3em;
+  }
+
+  .section-about .top-image1,
+  .section-about .top-image2 {
+    top: 1em;
   }
 }
 @media (max-width: 50em) {
@@ -1377,7 +1383,12 @@ form button:hover .submit-icon {
   }
 
   .section-about ul li img {
-    bottom: 2em;
+    bottom: -3em;
+    left: -1em;
+  }
+
+  .section-about .top-image3 {
+    bottom: 1em;
     left: -5em;
   }
 }
@@ -1682,6 +1693,20 @@ form button:hover .submit-icon {
     bottom: -1em;
     left: -8em;
   }
+
+  .section-about .top-image2 {
+    top: -2em;
+    left: 1em;
+  }
+
+  .section-about .top-image3 {
+    bottom: 0em;
+    left: -9em;
+  }
+  .section-about .top-imagebob {
+    bottom: -1em;
+    left: -6em;
+  }
 }
 
 @media screen and (max-width: 31.25em) {
@@ -1735,6 +1760,11 @@ form button:hover .submit-icon {
   .section-about ul .inline-gif:hover img,
   .section-about ul .inline-gif:active img {
     transform: scale(0.4);
+  }
+
+  .section-about .top-image3 {
+    bottom: -1em;
+    left: -9em;
   }
 }
 
