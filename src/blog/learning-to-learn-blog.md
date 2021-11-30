@@ -14,12 +14,11 @@ imageAlt: digital garden
 ---
 ## My Blog
 
-The goal of this blog is to be open and honest about my journey, I need a place to try to cement the new things I’m attempting to learn and hopefully shake my old brass attitude towards learning along the way. Whether it’s code, design, or just life I plan to have this green dot being the start of an ever-growing digital garden.
+The goal of this blog is to be open and honest about my journey. I need a place to try to cement the new things that I’m attempting to learn and hopefully shake my old brass attitude towards learning along the way. Whether it’s code, design, or just life I plan to have this green dot being the start of an ever-growing digital garden.
 
 ![sugar, spice, and everything nice.](/assets/blog/powerpuff-girls-sugar.gif)
 
 The only other option to document my learning publicly would be video and my attempts to sit down and record myself talking into a mic were, well... unsuccessful to say the least.
-
 
 Writing seems like less of a hurdle, less of a barrier for getting my thoughts out there and I don’t have to hear my own voice, which is always a plus.
 
