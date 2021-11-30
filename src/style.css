@@ -1177,7 +1177,7 @@ form button:hover .submit-icon {
   position: absolute;
   left: 0.15rem;
   right: 0.15rem;
-  bottom: -5px;
+  bottom: -8px;
   -webkit-transform: scaleX(0);
   -ms-transform: scaleX(0);
   transform: scaleX(0);
@@ -1556,6 +1556,10 @@ form button:hover .submit-icon {
   .section-about ul li img {
     bottom: -1em;
     left: -6em;
+  }
+
+  .section-about ul .inline-gif span::after {
+    height: 4px;
   }
 }
 
