@@ -666,6 +666,31 @@ Utility Classes
 
 } */
 
+/* skip link */
+[href="#content"] {
+  border: 1px solid transparent;
+  position: absolute;
+  outline: none;
+  color: var(--clr-title);
+  /* background-color: var(--clr-sidelink-text); */
+  padding: 0.5em;
+}
+[href="#content"]:hover {
+  color: var(--clr-brand);
+  /* background-color: var(--clr-title); */
+}
+
+/* https://benmyers.dev/blog/skip-links/ */
+[href="#content"]:not(:focus) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .sidebar {
   display: -ms-grid;
   display: grid;

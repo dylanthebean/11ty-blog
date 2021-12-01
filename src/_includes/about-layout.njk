@@ -17,13 +17,17 @@
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
+<a href="#content">
+    Skip to Content
+</a>
+
 <body>
     <div class="about-header">
 
         {% include 'header.njk' %}
     </div>
 
-    <main>
+    <main id="content" tabindex="-1">
 
         {{ content | safe }}
 
