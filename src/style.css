@@ -1286,6 +1286,7 @@ form button:hover .submit-icon {
   .section-about .top-image1,
   .section-about .top-image2 {
     top: 1em;
+    left: -2em;
   }
 }
 @media (max-width: 50em) {
@@ -1390,6 +1391,11 @@ form button:hover .submit-icon {
   .section-about .top-image3 {
     bottom: 1em;
     left: -5em;
+  }
+
+  .section-about .image-eyes {
+    bottom: -1em;
+    left: -3em;
   }
 }
 
@@ -1572,6 +1578,34 @@ form button:hover .submit-icon {
   .section-about ul .inline-gif span::after {
     height: 4px;
   }
+  .section-about .top-image1 {
+    top: -4em;
+    left: -2em;
+  }
+}
+
+@media (max-width: 42em) {
+  .section-about .top-image2 {
+    top: -1em;
+    left: -4em;
+  }
+
+  .section-about .image-eyes {
+    bottom: -1em;
+    left: -5.5em;
+  }
+}
+@media (max-width: 40em) {
+  .section-about .top-image2 {
+    top: -1em;
+    left: -5em;
+  }
+}
+@media (max-width: 39.5em) {
+  .section-about .top-image2 {
+    top: -1em;
+    left: -4em;
+  }
 }
 
 @media (max-width: 38em) {
@@ -1696,7 +1730,7 @@ form button:hover .submit-icon {
 
   .section-about .top-image2 {
     top: -2em;
-    left: 1em;
+    left: -4em;
   }
 
   .section-about .top-image3 {
@@ -1704,6 +1738,15 @@ form button:hover .submit-icon {
     left: -9em;
   }
   .section-about .top-imagebob {
+    bottom: -1em;
+    left: -6em;
+  }
+  .section-about .image-downhill {
+    bottom: -1em;
+    left: -4em;
+  }
+
+  .section-about .image-eyes {
     bottom: -1em;
     left: -6em;
   }
@@ -1765,6 +1808,16 @@ form button:hover .submit-icon {
   .section-about .top-image3 {
     bottom: -1em;
     left: -9em;
+  }
+
+  .section-about .image-downhill {
+    bottom: -1em;
+    left: -6em;
+  }
+
+  .section-about .image-hiding {
+    bottom: -1em;
+    left: -5em;
   }
 }
 
@@ -1828,5 +1881,19 @@ form button:hover .submit-icon {
   .nav-list__button {
     top: -7rem;
     left: 2rem;
+  }
+
+  .section-about .image-escape {
+    bottom: -1em;
+    left: -5em;
+  }
+
+  .section-about .image-burning {
+    bottom: -1em;
+    left: -4em;
+  }
+  .section-about .image-wonka {
+    bottom: -1em;
+    left: -10em;
   }
 }
