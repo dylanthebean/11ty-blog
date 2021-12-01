@@ -60,7 +60,7 @@ This is an area of design I find super useful and beneficial not just for solvin
 I tried to stay consistent with the current visual design of the system. My idea was to make the implementation of the results of the design process as easily executable as possible. 
 I found that the development and production of the key screens/features would fit well in the current information architecture. I believe this was necessary as to not force the business to sink investment in a complete revamp of the overall design of the user interface.
 
-## Question and feedback.
+## Questions and feedback.
 
 Feedback would have been advantageous throughout this process to ease some of the creeping imposter syndrome I inevitably experienced during this project.
 Who am I to question the design of this expensive interactive technology system designed by professionals?
