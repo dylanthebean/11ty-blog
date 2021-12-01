@@ -2,6 +2,17 @@
 layout: 'base.njk'
 ---
 
+{% metagen
+    title={{title}},
+    desc={{description}},
+    url={{url}} + {{page.url}},
+    img={{image}},
+    img_alt={{imageAlt}},
+    twitter_card_type={{type}},
+    twitter_handle={{twitter}},
+    name={{author}}
+%}
+
 <article class="main-article">
     <div class="container--narrow flow pt-lg">
 
