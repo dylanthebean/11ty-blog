@@ -75,4 +75,4 @@ The kiosks provide an incredible amount of accessibility features which are ever
 
 \*Disclaimer: This problem may only be store-specific as I have yet to have any interactions with any other kiosk flows outside of my current workplace. I worked full time at Mcdonald's and had no plan to travel to any store during my free time. My aim was to strengthen my approach towards design thinking and problem solving in general with hopefulness to have a valuable impact on my local environment with my solution to this real-world problem I encountered in my day-to-day work life.  
 
-You can check out the full case study on my Behance, [here](https://www.behance.net/DylanBehan).
+You can check out the full case study on my Behance, [here](https://www.behance.net/gallery/129104425/McDonalds-Kiosk-UX-Case-Study).
