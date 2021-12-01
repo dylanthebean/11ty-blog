@@ -60,7 +60,7 @@ This is an area of design I find super useful and beneficial not just for solvin
 I tried to stay consistent with the current visual design of the system. My idea was to make the implementation of the results of the design process as easily executable as possible. 
 I found that the development and production of the key screens/features would fit well in the current information architecture. I believe this was necessary as to not force the business to sink investment in a complete revamp of the overall design of the user interface.
 
-## Question and feedback.
+## Questions and feedback.
 
 Feedback would have been advantageous throughout this process to ease some of the creeping imposter syndrome I inevitably experienced during this project.
 Who am I to question the design of this expensive interactive technology system designed by professionals?
@@ -75,4 +75,4 @@ The kiosks provide an incredible amount of accessibility features which are ever
 
 \*Disclaimer: This problem may only be store-specific as I have yet to have any interactions with any other kiosk flows outside of my current workplace. I worked full time at Mcdonald's and had no plan to travel to any store during my free time. My aim was to strengthen my approach towards design thinking and problem solving in general with hopefulness to have a valuable impact on my local environment with my solution to this real-world problem I encountered in my day-to-day work life.  
 
-You can check out the full case study on my Behance, [here](https://www.behance.net/DylanBehan).
+You can check out the full case study on my Behance, [here](https://www.behance.net/gallery/129104425/McDonalds-Kiosk-UX-Case-Study).
