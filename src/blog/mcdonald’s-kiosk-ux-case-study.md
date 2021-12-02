@@ -67,7 +67,7 @@ Who am I to question the design of this expensive interactive technology system 
 
 ![jimmy neutron, what sauce would you like?](/assets/blog/jimmy-neutron.gif)
 
-When the question I’m usually asking is what sauce would you like with your nuggets?
+When the question I’m usually asking is what sauce would you like with your nuggets?...
 
 ## The future
 
