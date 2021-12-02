@@ -57,8 +57,8 @@ So why create content?
 
 I realised it’s only me that can clear that gate, and start the race.
 
-I’m creating to find people with similar interests, similar passions, people to accept who I am, and for me to accept myself too. I want to express my thoughts, decisions, all my failures, and passions so I can find people that feel the same way.
+I’m creating to find people with similar interests, similar passions. I want to express my thoughts, decisions, all my failures, and passions so I can find people that feel the same way.
 
-I’m creating content to be open and not hide away from criticism or embarrassment. In order to improve myself in whatever way that continues me along this mountainous journey of life. 
+I’m creating content to be open and not hide away from criticism. In order to improve myself in whatever way that continues me along this mountainous journey of life. 
 
 I’m creating to leave my thoughts behind, there’s no need to carry them all to the finish line.
