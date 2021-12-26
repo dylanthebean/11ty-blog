@@ -1,5 +1,5 @@
 ---
-title: Learning To Learn & Blog.
+title: Learning to Learn & Blog.
 description: Developing a place to cement the new things I’m attempting to learn
   and hopefully grow my own digital garden.
 author: Dylan Behan
